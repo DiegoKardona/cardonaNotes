@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.link {
+  color: white;
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica LT Std Light",
+    "Helvetica Neue LT Std", Helvetica;
+  transition: 0.8 all;
+
+  &:hover {
+    color: rgb(238, 238, 238);
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica LT Std Light",
+    "Helvetica Neue LT Std", Helvetica;
+}
+
+.first-content {
+  margin-top: 78px;
+}
+
+.marged-content {
+  margin-right: 40px;
+  margin-left: 40px;
+}

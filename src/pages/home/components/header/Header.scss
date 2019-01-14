@@ -1,0 +1,35 @@
+#home-header {
+  background-color: black;
+  padding: 14px 40px;
+  position: absolute;
+  top: 0;
+  color: white;
+  width: 100%;
+  overflow: hidden;
+  z-index: 999;
+
+  #header-container {
+    display: grid;
+    align-content: center;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+
+    #brand {
+      #brand-title {
+        h1 {
+          margin: 0;
+          font-size: 34px;
+
+          span {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+
+    #menu {
+      display: grid;
+      align-content: center;
+    }
+  }
+}

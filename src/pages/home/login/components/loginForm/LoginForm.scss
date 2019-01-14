@@ -1,0 +1,21 @@
+#login-form {
+  margin-top: 120px;
+  height: 40vh;
+  width: 100%;
+
+  h2 {
+    font-family: "HelveticaNeueW01-45Ligh", "Helvetica LT Std Light",
+      "Helvetica Neue LT Std", Helvetica;
+  }
+
+  #input-email,
+  #input-password {
+    width: 100%;
+  }
+
+  #login-button {
+    margin-top: 10px;
+    font-family: "HelveticaNeueW01-45Ligh", "Helvetica LT Std Light",
+      "Helvetica Neue LT Std", Helvetica;
+  }
+}

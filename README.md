@@ -1,2 +1,0 @@
-# cardonaNotes
-Created with CodeSandbox

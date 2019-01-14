@@ -1,0 +1,13 @@
+#cover {
+  background-image: url(http://getwallpapers.com/wallpaper/full/5/f/c/25221.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 380px;
+
+  #change-cover {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    right: 0;
+    padding: 4px;
+  }
+}

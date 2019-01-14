@@ -1,0 +1,21 @@
+#register-form {
+  margin-top: 120px;
+  width: 100%;
+
+  h2 {
+    font-family: "HelveticaNeueW01-45Ligh", "Helvetica LT Std Light",
+      "Helvetica Neue LT Std", Helvetica;
+  }
+
+  #input-email,
+  #input-username,
+  #input-password {
+    width: 100%;
+  }
+
+  #register-button {
+    margin-top: 10px;
+    font-family: "HelveticaNeueW01-45Ligh", "Helvetica LT Std Light",
+      "Helvetica Neue LT Std", Helvetica;
+  }
+}

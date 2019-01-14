@@ -1,0 +1,82 @@
+#avatar {
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: relative;
+  display: grid;
+  grid-template: repeat(3, auto) / repeat(3, auto);
+
+  #change-avatar {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 4px;
+    overflow: hidden;
+
+    #change-avatar-container {
+      #avatar-progress {
+        width: 100%;
+        margin-bottom: 6px;
+      }
+
+      form {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-gap: 4px;
+
+        #avatar-input-container {
+          position: relative;
+          border-radius: 4px;
+          height: 100%;
+          background: #ccc;
+          border: 1px solid #333;
+          width: 100%;
+          overflow: hidden;
+          margin-bottom: 6px;
+          text-align: center;
+          cursor: pointer;
+
+          p {
+            margin: auto 0;
+          }
+
+          #avatar-input {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+          }
+        }
+      }
+
+      #avatar-input-container {
+        position: relative;
+        border: 1px solid inherit;
+        border-radius: 4px;
+        height: 40px;
+        width: 40px;
+        overflow: hidden;
+        margin-bottom: 6px;
+
+        #avatar-input {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          opacity: 0;
+        }
+      }
+
+      #save-avatar {
+        background-color: #476fc4;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+#logged-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+  grid-column-gap: 10px;
+
+  #user-name {
+    font-family: "HelveticaNeueW01-45Ligh", "Helvetica LT Std Light",
+      "Helvetica Neue LT Std", Helvetica;
+  }
+
+  #user-avatar {
+    #avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  #menu {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    padding: 0 10px;
+  }
+}
+
+#login-menu {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10px;
+}
