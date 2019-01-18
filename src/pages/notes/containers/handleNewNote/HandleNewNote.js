@@ -1,5 +1,11 @@
 import React, { Component } from "react";
 
+//Importing firebase
+import firebase from "firebase";
+
+//Import redux
+import { connect } from "react-redux";
+
 //Importing NewNote component to handle it
 import NewNote from "../../components/new/NewNote";
 
@@ -21,8 +27,25 @@ class HandleNewNote extends Component {
 
   handleNewNote = e => {
     e.preventDefault();
+    const db = firebase.firestore();
 
-    alert(this.state.noteBody);
+    db.collection("notes")
+      .add({
+        title: this.state.noteTitle,
+        private: this.state.notePrivate,
+        content: this.state.noteBody,
+        author: {
+          name: this.props.user.displayName,
+          avatar: this.props.user.photoURL,
+          email: this.props.user.email
+        }
+      })
+      .then(docRef => {
+        alert("Post save with id: " + docRef.id);
+      })
+      .catch(error => {
+        alert("Error: " + error);
+      });
   };
 
   render() {
@@ -37,4 +60,8 @@ class HandleNewNote extends Component {
   }
 }
 
-export default HandleNewNote;
+const mapStateToProps = (state, props) => {
+  return { user: state.user };
+};
+
+export default connect(mapStateToProps)(HandleNewNote);

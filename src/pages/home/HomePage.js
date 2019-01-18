@@ -3,7 +3,8 @@ import React, { Component } from "react";
 /*Importing components*/
 //HandleMenu controls the Header
 import Header from "./containers/header/HandleMenu";
-import MainHero from "./components/mainHero/MainHero";
+//HandleHero controls the Mainhero
+import MainHero from "./containers/mainHero/HandleHero";
 import RecentPosts from "./components/posts/recent/RecentPosts";
 
 class HomePage extends Component {

@@ -1,0 +1,25 @@
+.noteComponent {
+  display: inline-block;
+  height: 160px;
+
+  .p-card-content {
+    height: 100px;
+    display: grid;
+  }
+
+  .noteHeader {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      margin: 10px auto;
+    }
+  }
+
+  .noteBody {
+    overflow: auto;
+    word-wrap: break-word;
+  }
+}

@@ -5,6 +5,8 @@ import React, { Component } from "react";
 import Header from "../home/containers/header/HandleMenu";
 //HandleNewNote constrols the NewNote
 import NewNote from "./containers/handleNewNote/HandleNewNote";
+//HandleMyNotes controls the MyNotes component
+import MyNotes from "./containers/notes/HandleMyNotes";
 
 class NotesPage extends Component {
   componentDidMount() {
@@ -16,6 +18,7 @@ class NotesPage extends Component {
       <div>
         <Header />
         <NewNote />
+        <MyNotes />
       </div>
     );
   }
