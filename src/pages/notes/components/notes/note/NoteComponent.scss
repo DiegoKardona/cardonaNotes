@@ -1,10 +1,11 @@
 .noteComponent {
   display: inline-block;
-  height: 160px;
 
   .p-card-content {
-    height: 100px;
+    height: 120px;
     display: grid;
+    overflow: hidden;
+    grid-template-rows: auto 1fr auto;
   }
 
   .noteHeader {
@@ -13,13 +14,33 @@
     justify-content: space-between;
     align-items: center;
 
+    .notePrivate {
+      cursor: pointer;
+
+      &:hover {
+        color: #476fc4;
+      }
+    }
+
     h3 {
       margin: 10px auto;
     }
   }
 
   .noteBody {
-    overflow: auto;
-    word-wrap: break-word;
+    height: auto;
+    overflow: hidden;
+
+    * {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 354px;
+    }
+  }
+
+  .noteControls {
+    border-top: 1px solid rgb(75, 75, 75);
+    padding: 6px 0;
   }
 }

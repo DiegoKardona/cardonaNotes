@@ -26,7 +26,7 @@ class HandleMyNotes extends Component {
       .then(querySnapshot => {
         const notes = [];
         querySnapshot.forEach(note => {
-          notes.push(note.data());
+          notes.push({ ...note.data(), id: note.id });
         });
         this.setState({ isLoading: false, notes });
       })
